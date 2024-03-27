@@ -1,0 +1,4 @@
+Bundle-Name: poc-user-list-web
+Bundle-SymbolicName: com.poc
+Bundle-Version: 1.0.0
+Export-Package: com.poc.constants

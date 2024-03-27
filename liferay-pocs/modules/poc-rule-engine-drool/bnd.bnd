@@ -1,0 +1,5 @@
+Bundle-Name: poc-rule-engine-drool
+Bundle-SymbolicName: poc.rule.engine.drool
+Bundle-Version: 1.0.0
+Export-Package: poc.rule.engine.drool.constants
+Import-Package: *;resolution:=optional

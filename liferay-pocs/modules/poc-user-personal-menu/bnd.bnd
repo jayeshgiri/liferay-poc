@@ -1,0 +1,4 @@
+Bundle-Name: poc-user-personal-menu
+Bundle-SymbolicName: com.poc.user.personal.menu
+Bundle-Version: 1.0.0
+Export-Package: com.poc.user.personal.menu.constants

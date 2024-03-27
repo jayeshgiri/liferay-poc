@@ -1,0 +1,4 @@
+Bundle-Name: poc-custom-panel-app
+Bundle-SymbolicName: com.poc.custom.panel.app
+Bundle-Version: 1.0.0
+Export-Package: com.poc.custom.panel.app.constants

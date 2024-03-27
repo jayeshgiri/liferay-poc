@@ -1,0 +1,4 @@
+Bundle-Name: poc-system-setting-configurable-e1
+Bundle-SymbolicName: com.system.setting.configurable.e1
+Bundle-Version: 1.0.0
+Export-Package: com.system.setting.configurable.e1.constants

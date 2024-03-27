@@ -1,0 +1,7 @@
+apiDir: "../poc-rest-builder-apis-api/src/main/java"
+apiPackagePath: "com.poc.rest.builder.apis"
+application:
+    baseURI: "/poc-rest-builder-apis"
+    className: "PocRestBuilderApisApplication"
+    name: "PocRestBuilderApis"
+author: "Jayesh Goswami"

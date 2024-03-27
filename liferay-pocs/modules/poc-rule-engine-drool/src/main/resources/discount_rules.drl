@@ -1,0 +1,15 @@
+import poc.rule.engine.drool.custom.Person
+
+rule "Young Person Discount"
+when
+    $person: Person(age < 30)
+then
+    $person.setDiscount(0.1); // 10% discount for young persons
+end
+
+rule "Elderly Person Discount"
+when
+    $person: Person(age >= 60)
+then
+    $person.setDiscount(0.2); // 20% discount for elderly persons
+end

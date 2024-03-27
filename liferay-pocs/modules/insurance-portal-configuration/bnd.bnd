@@ -1,0 +1,4 @@
+Bundle-Name: insurance-portal-configuration
+Bundle-SymbolicName: com.aimdek.insurance.portal.configuration
+Bundle-Version: 1.0.0
+Export-Package: com.aimdek.insurance.portal.configuration.constants

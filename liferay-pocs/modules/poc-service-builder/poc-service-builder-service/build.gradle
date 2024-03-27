@@ -1,0 +1,11 @@
+dependencies {
+	compile project(":modules:poc-service-builder:poc-service-builder-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+}
+
+buildService {
+	apiDir = "../poc-service-builder-api/src/main/java"
+}
+
+group = "poc.service.builder"

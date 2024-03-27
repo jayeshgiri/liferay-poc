@@ -1,0 +1,11 @@
+
+dependencies {
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+
+	cssBuilder group: "com.liferay", name: "com.liferay.css.builder", version: "3.1.0"
+	
+    compileInclude group: "org.drools", name: "drools-core", version: "7.59.0.Final"
+    compileInclude group: "org.drools", name: "drools-compiler", version: "7.59.0.Final"
+    compileInclude group: "org.drools", name: "drools-decisiontables", version: "7.59.0.Final"
+    compileInclude group: "stax", name: "stax-api", version: "1.0.1"
+}

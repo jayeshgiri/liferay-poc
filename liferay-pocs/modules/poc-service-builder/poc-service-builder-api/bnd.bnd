@@ -1,0 +1,10 @@
+Bundle-Name: poc-service-builder-api
+Bundle-SymbolicName: poc.service.builder.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	poc.service.builder.exception,\
+	poc.service.builder.model,\
+	poc.service.builder.service,\
+	poc.service.builder.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../poc-service-builder-service/service.xml

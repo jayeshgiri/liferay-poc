@@ -1,0 +1,4 @@
+Bundle-Name: poc-school-portlet-web
+Bundle-SymbolicName: com.poc.school.porlet.web
+Bundle-Version: 1.0.0
+Export-Package: com.poc.school.porlet.web.constants

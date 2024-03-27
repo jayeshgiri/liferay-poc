@@ -1,0 +1,3 @@
+Bundle-Name: poc-user-local-service-wrapper
+Bundle-SymbolicName: com.poc.user.local.service.wrapper
+Bundle-Version: 1.0.0
