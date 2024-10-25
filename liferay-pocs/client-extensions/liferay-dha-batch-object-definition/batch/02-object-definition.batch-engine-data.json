@@ -1,0 +1,214 @@
+{
+	"configuration": {
+		"className": "com.liferay.object.admin.rest.dto.v1_0.ObjectDefinition",
+		"parameters": {
+			"containsHeaders": "true",
+			"createStrategy": "UPSERT",
+			"importStrategy": "ON_ERROR_FAIL",
+			"taskItemDelegateName": "DEFAULT",
+			"updateStrategy": "UPDATE"
+		}
+	},
+	"items": [
+		{
+			"objectFolderExternalReferenceCode": "DUBAI-HEALTH-AUTHORITY",
+			"accountEntryRestrictedObjectFieldName": "",
+			"objectActions": [],
+			"enableLocalization": true,
+			"externalReferenceCode": "DHA-APP-TRANSLATIONS",
+			"objectFields": [
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "Key"
+					},
+					"type": "String",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "key",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"listTypeDefinitionExternalReferenceCode": "DHA-APPLICATION-COMPONENTS",
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "Application Component"
+					},
+					"type": "String",
+					"required": true,
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "applicationComponent",
+					"state": false,
+					"businessType": "Picklist",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": true,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "Translation"
+					},
+					"type": "String",
+					"required": false,
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "translation",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				}
+			],
+			"restContextPath": "/o/c/applicationtranslations",
+			"scope": "company",
+			"portlet": false,
+			"modifiable": true,
+			"parameterRequired": false,
+			"titleObjectFieldName": "id",
+			"active": true,
+			"defaultLanguageId": "en_US",
+			"enableIndexSearch": false,
+			"label": {
+				"en_US": "Application Translation"
+			},
+			"panelCategoryKey": "applications_menu.applications.content",
+			"pluralLabel": {
+				"en_US": "Application Translations"
+			},
+			"objectLayouts": [
+				{
+					"objectLayoutTabs": [
+						{
+							"name": {
+								"en_US": "Translation Information"
+							},
+							"objectLayoutBoxes": [
+								{
+									"objectLayoutRows": [
+										{
+											"objectLayoutColumns": [
+												{
+													"objectFieldName": "key",
+													"size": 6,
+													"priority": 0
+												},
+												{
+													"objectFieldName": "applicationComponent",
+													"size": 6,
+													"priority": 0
+												}
+											],
+											"priority": 0
+										},
+										{
+											"objectLayoutColumns": [
+												{
+													"objectFieldName": "translation",
+													"size": 12,
+													"priority": 0
+												}
+											],
+											"priority": 0
+										}
+									],
+									"collapsable": false,
+									"name": {
+										"en_US": "Main"
+									},
+									"priority": 0,
+									"type": "regular"
+								}
+							],
+							"priority": 0
+						}
+					],
+					"objectDefinitionExternalReferenceCode": "DHA-APP-TRANSLATIONS",
+					"name": {
+						"en_US": "Add / Edit Translation"
+					},
+					"defaultObjectLayout": true
+				}
+			],
+			"objectViews": [
+				{
+					"objectDefinitionExternalReferenceCode": "DHA-APP-TRANSLATIONS",
+					"name": {
+						"en_US": "Main Translation View"
+					},
+					"objectViewFilterColumns": [],
+					"objectViewSortColumns": [
+						{
+							"objectFieldName": "applicationComponent",
+							"sortOrder": "asc",
+							"priority": 0
+						},
+						{
+							"objectFieldName": "key",
+							"sortOrder": "asc",
+							"priority": 1
+						}
+					],
+					"defaultObjectView": true,
+					"objectViewColumns": [
+						{
+							"objectFieldName": "id",
+							"label": {
+								"en_US": "ID"
+							},
+							"priority": 0
+						},
+						{
+							"objectFieldName": "key",
+							"label": {
+								"en_US": "Key"
+							},
+							"priority": 1
+						},
+						{
+							"objectFieldName": "applicationComponent",
+							"label": {
+								"en_US": "Application Component"
+							},
+							"priority": 2
+						},
+						{
+							"objectFieldName": "translation",
+							"label": {
+								"en_US": "Translation"
+							},
+							"priority": 3
+						}
+					]
+				}
+			],
+			"enableObjectEntryDraft": false,
+			"name": "ApplicationTranslation",
+			"status": {
+				"label_i18n": "Approved",
+				"code": 0,
+				"label": "approved"
+			}
+		}
+
+	]
+}

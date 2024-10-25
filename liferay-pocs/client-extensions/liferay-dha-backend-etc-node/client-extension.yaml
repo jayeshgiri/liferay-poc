@@ -1,0 +1,30 @@
+assemble:
+  - include:
+      - '**/*.js'
+      - application.json
+      - package.json
+liferay-dha-backend-etc-node-oauth-application-user-agent:
+  .serviceAddress: localhost:3001
+  .serviceScheme: http
+  name: Liferay DHA Backend OAuth Application User Agent
+  scopes: []
+  type: oAuthApplicationUserAgent
+node-user-agent:
+  .serviceAddress: localhost:3001
+  .serviceScheme: http
+  name: Node User Agent
+  scopes: []
+  type: oAuthApplicationUserAgent
+liferay-dha-backend-etc-node-oauth-application-server:
+  .serviceAddress: localhost:3001
+  .serviceScheme: http
+  name: Liferay DHA Backend OAuth Application Server
+  scopes:
+    - c_sickleavedetail.everything
+    - c_applicationtranslation.everything.read
+    - c_dhaotpqueue.everything
+    - c_paymenttransaction.everything
+    - c_salamarequest.everything
+    - c_salamarequesttype.everything
+    - c_medicalreport.everything
+  type: oAuthApplicationHeadlessServer

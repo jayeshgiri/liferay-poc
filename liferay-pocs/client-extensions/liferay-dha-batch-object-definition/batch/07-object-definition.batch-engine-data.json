@@ -1,0 +1,175 @@
+{
+  "configuration": {
+    "className": "com.liferay.object.admin.rest.dto.v1_0.ObjectDefinition",
+    "parameters": {
+      "containsHeaders": "true",
+      "createStrategy": "UPSERT",
+      "importStrategy": "ON_ERROR_FAIL",
+      "taskItemDelegateName": "DEFAULT",
+      "updateStrategy": "UPDATE"
+    }
+  },
+  "items": [
+    {
+      "enableComments": false,
+      "objectRelationships": [],
+      "objectFolderExternalReferenceCode": "DUBAI-HEALTH-AUTHORITY",
+      "enableCategorization": true,
+      "accountEntryRestrictedObjectFieldName": "",
+      "objectActions": [],
+      "enableLocalization": false,
+      "accountEntryRestricted": false,
+      "externalReferenceCode": "DUBAI-HEALTH-DHA-OTP-QUEUE",
+      "objectFields": [
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "Mobile Number"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "mobileNumber",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "Otp"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "otp",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "TemplateId"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "templateId",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "ReferenceId"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "referenceId",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "Language"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "language",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "Integer",
+          "label": {
+            "en_US": "IsVerified"
+          },
+          "type": "Integer",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "isVerified",
+          "state": false,
+          "businessType": "Integer",
+          "readOnlyConditionExpression": ""
+        }
+      ],
+      "restContextPath": "/o/c/dhaoptqueues",
+      "scope": "company",
+      "portlet": true,
+      "modifiable": true,
+      "parameterRequired": false,
+      "enableObjectEntryHistory": false,
+      "titleObjectFieldName": "id",
+      "objectValidationRules": [],
+      "active": true,
+      "defaultLanguageId": "en_US",
+      "enableIndexSearch": true,
+      "label": {
+        "en_US": "DHA OTP Queue"
+      },
+      "panelCategoryKey": "applications_menu.applications.content",
+      "pluralLabel": {
+        "en_US": "DHA OTP Queue"
+      },
+      "objectLayouts": [],
+      "system": false,
+      "objectViews": [],
+      "enableObjectEntryDraft": false,
+      "name": "DHAOTPQueue",
+      "status": {
+        "label_i18n": "Approved",
+        "code": 0,
+        "label": "approved"
+      }
+    }
+  ]
+}

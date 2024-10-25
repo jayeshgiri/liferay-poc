@@ -1,0 +1,1010 @@
+{
+  "configuration": {
+    "className": "com.liferay.object.admin.rest.dto.v1_0.ObjectDefinition",
+    "parameters": {
+      "containsHeaders": "true",
+      "createStrategy": "UPSERT",
+      "importStrategy": "ON_ERROR_FAIL",
+      "taskItemDelegateName": "DEFAULT",
+      "updateStrategy": "UPDATE"
+    }
+  },
+  "items": [
+    {
+      "enableComments": false,
+      "objectRelationships": [],
+      "objectFolderExternalReferenceCode": "DUBAI-HEALTH-AUTHORITY",
+      "enableCategorization": true,
+      "accountEntryRestrictedObjectFieldName": "",
+      "objectActions": [],
+      "enableLocalization": false,
+      "accountEntryRestricted": false,
+      "externalReferenceCode": "DUBAI-HEALTH-DHA-MEDICAL-REPORT",
+      "objectFields": [
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "initialValue",
+              "value": "1"
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "RowId"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "rowId",
+          "state": false,
+          "businessType": "AutoIncrement",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "Long",
+          "label": {
+            "en_US": "BusinessTransactionId"
+          },
+          "type": "Long",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "businessTransactionId",
+          "state": false,
+          "businessType": "LongInteger",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "Long",
+          "label": {
+            "en_US": "SalamaRequestId"
+          },
+          "type": "Long",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "salamaRequestId",
+          "state": false,
+          "businessType": "LongInteger",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "PatientName"
+          },
+          "type": "Clob",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "patientName",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "timeStorage",
+              "value": "convertToUTC"
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "DateTime",
+          "label": {
+            "en_US": "RequestDate"
+          },
+          "type": "DateTime",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "requestDate",
+          "state": false,
+          "businessType": "DateTime",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "SpecialtyName"
+          },
+          "type": "Clob",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "specialtyName",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "timeStorage",
+              "value": "convertToUTC"
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "DateTime",
+          "label": {
+            "en_US": "VisitDate"
+          },
+          "type": "DateTime",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "visitDate",
+          "state": false,
+          "businessType": "DateTime",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "DoctorName"
+          },
+          "type": "Clob",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "doctorName",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "FacilityName"
+          },
+          "type": "Clob",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "facilityName",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "MedicalReportStatus"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "medicalReportStatus",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "Long",
+          "label": {
+            "en_US": "PaymentTransactionId"
+          },
+          "type": "Long",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "paymentTransactionId",
+          "state": false,
+          "businessType": "LongInteger",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "Double",
+          "label": {
+            "en_US": "Amount"
+          },
+          "type": "Double",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "amount",
+          "state": false,
+          "businessType": "Decimal",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "Relationship"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "relationship",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "ContactNumber"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "contactNumber",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "AlternateContactNumber"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "alternateContactNumber",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "ReasonForApplication"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "reasonForApplication",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "OtherReasonForApplication"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "otherReasonForApplication",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "Comments"
+          },
+          "type": "Clob",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "comments",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "FilenetVSID"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "filenetVSID",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "SalamaFile"
+          },
+          "type": "Clob",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "salamaFile",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "MRN"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "mRN",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "RefNumber"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "refNumber",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "timeStorage",
+              "value": "convertToUTC"
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "DateTime",
+          "label": {
+            "en_US": "ReportGeneratedOn"
+          },
+          "type": "DateTime",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "reportGeneratedOn",
+          "state": false,
+          "businessType": "DateTime",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "PageLang"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "pageLang",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "ReasonForReject"
+          },
+          "type": "Clob",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "reasonForReject",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "ExceptionReason"
+          },
+          "type": "Clob",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "exceptionReason",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "Dependents"
+          },
+          "type": "Clob",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "dependents",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "Long",
+          "label": {
+            "en_US": "CreatedById"
+          },
+          "type": "Long",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "createdById",
+          "state": false,
+          "businessType": "LongInteger",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "CreatedByName"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "createdByName",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "timeStorage",
+              "value": "convertToUTC"
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "DateTime",
+          "label": {
+            "en_US": "CreatedOn"
+          },
+          "type": "DateTime",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "createdOn",
+          "state": false,
+          "businessType": "DateTime",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "Long",
+          "label": {
+            "en_US": "ModifiedById"
+          },
+          "type": "Long",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "modifiedById",
+          "state": false,
+          "businessType": "LongInteger",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "ModifiedByName"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "modifiedByName",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "timeStorage",
+              "value": "convertToUTC"
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "DateTime",
+          "label": {
+            "en_US": "ModifiedOn"
+          },
+          "type": "DateTime",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "",
+          "unique": false,
+          "name": "modifiedOn",
+          "state": false,
+          "businessType": "DateTime",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "OtherRelationship"
+          },
+          "type": "Clob",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "otherRelationship",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "DepartmentId"
+          },
+          "type": "Clob",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "departmentId",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "DoctorId"
+          },
+          "type": "Clob",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "doctorId",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "LocationId"
+          },
+          "type": "Clob",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "locationId",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "DepartmentName"
+          },
+          "type": "Clob",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "departmentName",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [],
+          "readOnly": "false",
+          "DBType": "String",
+          "label": {
+            "en_US": "HasPayment"
+          },
+          "type": "String",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "hasPayment",
+          "state": false,
+          "businessType": "Text",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "DOB"
+          },
+          "type": "Clob",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "dOB",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "CSN"
+          },
+          "type": "Clob",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "cSN",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        },
+        {
+          "indexed": true,
+          "localized": false,
+          "objectFieldSettings": [
+            {
+              "name": "showCounter",
+              "value": false
+            }
+          ],
+          "readOnly": "false",
+          "DBType": "Clob",
+          "label": {
+            "en_US": "DepartmentAbbrevation"
+          },
+          "type": "Clob",
+          "required": false,
+          "indexedAsKeyword": false,
+          "system": false,
+          "indexedLanguageId": "en_US",
+          "unique": false,
+          "name": "departmentAbbrevation",
+          "state": false,
+          "businessType": "LongText",
+          "readOnlyConditionExpression": ""
+        }
+      ],
+      "restContextPath": "/o/c/medicalreports",
+      "scope": "company",
+      "portlet": true,
+      "modifiable": true,
+      "parameterRequired": false,
+      "enableObjectEntryHistory": false,
+      "titleObjectFieldName": "id",
+      "objectValidationRules": [],
+      "active": true,
+      "defaultLanguageId": "en_US",
+      "enableIndexSearch": true,
+      "label": {
+        "en_US": "Medical Report"
+      },
+      "panelCategoryKey": "applications_menu.applications.content",
+      "pluralLabel": {
+        "en_US": "Medical Report"
+      },
+      "objectLayouts": [],
+      "system": false,
+      "objectViews": [],
+      "enableObjectEntryDraft": false,
+      "name": "MedicalReport",
+      "status": {
+        "label_i18n": "Approved",
+        "code": 0,
+        "label": "approved"
+      }
+    }
+  ]
+}
