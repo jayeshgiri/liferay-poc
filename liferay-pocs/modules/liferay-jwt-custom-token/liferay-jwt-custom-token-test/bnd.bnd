@@ -1,0 +1,5 @@
+Bundle-Name: liferay-jwt-custom-token-test
+Bundle-SymbolicName: liferay.jwt.custom.token.test
+Bundle-Version: 1.0.0
+-includeresource: liferay.jwt.custom.token.client.jar=../liferay-jwt-custom-token-client/build/libs/liferay.jwt.custom.token.client-1.0.0.jar;lib:=true
+-provider-policy: ${replacestring;${range;[==,==]};.*,(.*)];$1}

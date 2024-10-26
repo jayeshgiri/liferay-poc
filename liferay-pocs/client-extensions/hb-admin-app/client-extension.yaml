@@ -1,0 +1,13 @@
+assemble:
+  - from: build/static
+    into: static
+client-admin-app:
+  friendlyURLMapping: client-admin-app
+  htmlElementName: client-admin-app
+  instanceable: true
+  name: Client Admin App
+  portletCategoryName: category.client-extensions
+  type: customElement
+  urls:
+    - js/main.*.js
+  useESM: true

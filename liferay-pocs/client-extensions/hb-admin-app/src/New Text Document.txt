@@ -1,0 +1,32 @@
+import { createRoot } from "react-dom/client";
+import './index.css'
+// Axios
+// Apps
+
+/**
+ * TIP: Replace this style import with rtl styles to enable rtl mode
+ *
+ * import './_metronic/assets/css/style.rtl.css'
+ **/
+import { AppRoutes } from "./app/routing/AppRoutes";
+import { AuthProvider } from "./app/modules/auth/Auth";
+/**
+ * Creates `axios-mock-adapter` instance for provided `axios` instance, add
+ * basic Metronic mocks and returns it.
+ *
+ * @see https://github.com/ctimmerm/axios-mock-adapter
+ */
+/**
+ * Inject Metronic interceptors for axios.
+ *
+ * @see https://github.com/axios/axios#interceptors
+ */
+
+const container = document.getElementById("root");
+if (container) {
+  createRoot(container).render(
+    <AuthProvider>
+      <AppRoutes />
+    </AuthProvider>,
+  );
+}

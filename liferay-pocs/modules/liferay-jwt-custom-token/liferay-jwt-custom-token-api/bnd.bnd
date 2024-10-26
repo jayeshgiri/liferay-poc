@@ -1,0 +1,6 @@
+Bundle-Name: liferay-jwt-custom-token-api
+Bundle-SymbolicName: liferay.jwt.custom.token.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	liferay.jwt.custom.token.dto.v1_0,\
+	liferay.jwt.custom.token.resource.v1_0

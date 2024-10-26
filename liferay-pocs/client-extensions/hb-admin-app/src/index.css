@@ -1,0 +1,10 @@
+.myapp-wrapper {
+    max-width: 100%;  /* Ensure the div takes up the full width of its container */
+    padding: 16px;
+    border: 1px solid #ddd;
+    word-wrap: break-word;   /* Forces long words to wrap inside the div */
+    overflow-wrap: break-word; /* Ensures compatibility for word wrapping */
+    white-space: normal;     /* Ensures normal wrapping behavior */
+    line-height: 1.5;        /* Adds a relaxed line height for better readability */
+    overflow: hidden;        /* Prevents text overflow */
+}

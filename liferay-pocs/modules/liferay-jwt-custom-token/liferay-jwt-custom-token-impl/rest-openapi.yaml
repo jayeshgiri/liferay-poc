@@ -1,0 +1,80 @@
+openapi: 3.0.1
+info:
+  description: "LiferayJwtCustomToken REST API"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+  title: Liferay JWT Custom Token API
+  version: "v1.0"
+paths:
+  /hello:
+    get:
+      summary: "Returns a hello message"
+      operationId: getHello
+      responses:
+        "200":
+          description: "A simple hello message"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HelloResponse"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/HelloResponse"
+  /getJwtToken:
+    get:
+      summary: "Returns a Encoded JWT Token"
+      operationId: getJwtToken
+      responses:
+        "200":
+          description: "Returns a Encoded JWT Token"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/JWTTokenResponse"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/JWTTokenResponse"
+  /getDecodedJwtToken:
+    post:
+      summary: "Returns a Decoded JWT Token"
+      operationId: getDecodedJwtToken
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/JWTTokenRequest"
+          application/xml:
+            schema:
+              $ref: "#/components/schemas/JWTTokenRequest"
+      responses:
+        "200":
+          description: "Returns a Decoded JWT Token"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/JWTTokenResponse"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/JWTTokenResponse"
+components:
+  schemas:
+    HelloResponse:
+      type: object
+      properties:
+        message:
+          type: string
+          example: "Hello, world!"
+    JWTTokenRequest:
+      type: object
+      properties:
+        encodedToken:
+          type: string
+          example: "JWT Encoded Token"
+    JWTTokenResponse:
+      type: object
+      properties:
+        jwtToken:
+          type: string
+          example: "JWT Token Response"

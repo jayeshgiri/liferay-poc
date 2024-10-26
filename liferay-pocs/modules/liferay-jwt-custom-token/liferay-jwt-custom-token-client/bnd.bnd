@@ -1,0 +1,3 @@
+Bundle-Name: liferay-jwt-custom-token-client
+Bundle-SymbolicName: liferay.jwt.custom.token.client
+Bundle-Version: 1.0.0

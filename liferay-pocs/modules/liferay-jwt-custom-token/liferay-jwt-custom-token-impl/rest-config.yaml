@@ -1,0 +1,9 @@
+apiDir: "../liferay-jwt-custom-token-api/src/main/java"
+apiPackagePath: "liferay.jwt.custom.token"
+application:
+    baseURI: "/liferay-jwt-custom-token"
+    className: "LiferayJwtCustomTokenApplication"
+    name: "LiferayJwtCustomToken"
+author: "JayeshGoswami"
+clientDir: "../liferay-jwt-custom-token-client/src/main/java"
+testDir: "../liferay-jwt-custom-token-test/src/testIntegration/java"
