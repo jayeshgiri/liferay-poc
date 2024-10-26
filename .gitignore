@@ -4,3 +4,4 @@ liferay-pocs/.yarnrc
 liferay-pocs/package.json
 liferay-pocs/package-lock.json
 liferay-pocs/yarn.lock
+node/jwe-node-app/node_modules/
