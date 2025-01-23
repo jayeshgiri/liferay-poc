@@ -1,0 +1,9 @@
+apiDir: "../hb-user-rest-api/src/main/java"
+apiPackagePath: "hb.user.rest"
+application:
+    baseURI: "/hb-user-rest"
+    className: "HbUserRestApplication"
+    name: "HbUserRest"
+author: "JayeshGoswami"
+clientDir: "../hb-user-rest-client/src/main/java"
+testDir: "../hb-user-rest-test/src/testIntegration/java"

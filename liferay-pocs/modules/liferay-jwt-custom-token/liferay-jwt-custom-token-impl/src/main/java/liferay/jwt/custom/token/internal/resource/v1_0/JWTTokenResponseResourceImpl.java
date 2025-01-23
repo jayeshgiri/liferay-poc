@@ -1,6 +1,8 @@
 package liferay.jwt.custom.token.internal.resource.v1_0;
 
 import com.liferay.petra.string.StringPool;
+import com.liferay.portal.kernel.json.JSONFactoryUtil;
+import com.liferay.portal.kernel.json.JSONObject;
 import com.liferay.portal.kernel.model.User;
 import com.liferay.portal.kernel.service.ServiceContextThreadLocal;
 import com.liferay.portal.kernel.service.UserLocalServiceUtil;
@@ -41,13 +43,34 @@ public class JWTTokenResponseResourceImpl extends BaseJWTTokenResponseResourceIm
             // Set the current time and expiration time (e.g., 10 minutes from iat)
             long currentTimeMillis = System.currentTimeMillis();
             Date iat = new Date(currentTimeMillis);
-            Date exp = new Date(currentTimeMillis + 3 * 60 * 1000); // Expire in 3 minutes
+            Date exp = new Date(System.currentTimeMillis() + 3L * 24 * 60 * 60 * 1000);// Expire in 3 days
+         //   Date exp = new Date(System.currentTimeMillis() + 4L * 60 * 60 * 1000); // Expire in 4 hours
 
             long userId = ServiceContextThreadLocal.getServiceContext().getUserId();
 
             User user = UserLocalServiceUtil.getUserById(userId);
             JWTClaimsSet claimsSet = null;
             if (user != null) {
+
+                JSONObject jsonObject = JSONFactoryUtil.createJSONObject();
+
+                JSONObject userObject = JSONFactoryUtil.createJSONObject();
+                userObject.put("read", true);
+                userObject.put("write", true);
+
+                JSONObject roleObject = JSONFactoryUtil.createJSONObject();
+                roleObject.put("read", false);
+                roleObject.put("write", false);
+
+                JSONObject organizationObject = JSONFactoryUtil.createJSONObject();
+                organizationObject.put("read", false);
+                organizationObject.put("write", false);
+
+                jsonObject.put("user", userObject);
+                jsonObject.put("role", roleObject);
+                jsonObject.put("organization", organizationObject);
+
+                String jsonString = jsonObject.toString();
 
                 // Create JWT claims with required details
                  claimsSet = new JWTClaimsSet.Builder()
@@ -59,7 +82,7 @@ public class JWTTokenResponseResourceImpl extends BaseJWTTokenResponseResourceIm
                         .claim("username", user.getContact().getUserName())
                         .claim("email", user.getEmailAddress())            // username
                         .issuer("liferay")                                                       // iss
-                        .claim("scope", "[]]") // scope
+                        .claim("scope", jsonString) // scope
                         .claim("grant_type", "custom_grant_type")                   // grant_type
                         .build();
 

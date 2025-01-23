@@ -1,0 +1,3 @@
+Bundle-Name: hb-user-rest-impl
+Bundle-SymbolicName: hb.user.rest.impl
+Bundle-Version: 1.0.0

@@ -1,0 +1,5 @@
+Bundle-Name: hb-user-rest-test
+Bundle-SymbolicName: hb.user.rest.test
+Bundle-Version: 1.0.0
+-includeresource: hb.user.rest.client.jar=../hb-user-rest-client/build/libs/hb.user.rest.client-1.0.0.jar;lib:=true
+-provider-policy: ${replacestring;${range;[==,==]};.*,(.*)];$1}

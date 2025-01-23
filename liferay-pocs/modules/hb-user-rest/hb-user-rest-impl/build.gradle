@@ -1,0 +1,7 @@
+dependencies {
+	api project(":modules:hb-user-rest:hb-user-rest-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+}
+
+group = "hb.user.rest"

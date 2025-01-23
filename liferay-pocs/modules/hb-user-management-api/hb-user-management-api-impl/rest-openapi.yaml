@@ -1,0 +1,162 @@
+openapi: 3.0.1
+info:
+    description: "HB User Management API"
+    license:
+        name: "Apache 2.0"
+        url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+    title: HB User Management API
+    version: "v1.0"
+paths:
+    /user/batch:
+        post:
+            summary: "Create a batch of users with roles, organization, and address"
+            operationId: createUsers
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            type: array
+                            items:
+                                $ref: "#/components/schemas/HBUser"
+                    application/xml:
+                        schema:
+                            type: array
+                            items:
+                                $ref: "#/components/schemas/HBUser"
+            responses:
+                "200":
+                    description: "Returns a Decoded JWT Token"
+                    content:
+                        application/json:
+                            schema:
+                                type: array
+                                items:
+                                    $ref: "#/components/schemas/UserCreationResponse"
+                        application/xml:
+                            schema:
+                                type: array
+                                items:
+                                    $ref: "#/components/schemas/UserCreationResponse"
+    /organization/onboarded:
+        post:
+            summary: "Validate Organization Onboarded or not"
+            operationId: updateOrganizationOnboardingStatus
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: "#/components/schemas/HBOrganizationOnboardedRequest"
+                    application/xml:
+                        schema:
+                            $ref: "#/components/schemas/HBOrganizationOnboardedRequest"
+            responses:
+                "200":
+                    description: "Returns a Organization Onboarded Status"
+                    content:
+                        application/json:
+                            schema:
+                              $ref: "#/components/schemas/HBOrganizationOnboardedResponse"
+                        application/xml:
+                            schema:
+                               $ref: "#/components/schemas/HBOrganizationOnboardedResponse"
+components:
+    schemas:
+        HBUser:
+            type: object
+            properties:
+                firstName:
+                    type: string
+                middleName:
+                    type: string
+                lastName:
+                    type: string
+                emailAddress:
+                    type: string
+                jobTitle:
+                    type: string
+                sex:
+                    type: string
+                organizationId:
+                    type: integer
+                roleIds:
+                    type: array
+                    items:
+                        type: integer
+                isActive:
+                    type: boolean
+                address:
+                    $ref: "#/components/schemas/CustomAddress"
+                customFields:
+                    type: object
+                    properties:
+                        employeeId:
+                            type: string
+                        relationship:
+                            type: string
+                        employeeDepartment:
+                            type: string
+                        employeeClass:
+                            type: string
+                        hireDate:
+                            type: string
+                        scheduledHours:
+                            type: string
+                        pharmacyBenefits:
+                            type: string
+                        plan:
+                            type: string
+                        benefitsEffectiveDate:
+                            type: string
+                        medicalCoverage:
+                            type: string
+                        coverageLevel:
+                            type: string
+        CustomAddress:
+            type: object
+            properties:
+                street:
+                    type: string
+                city:
+                    type: string
+                postalCode:
+                    type: string
+                country:
+                    type: string
+                state:
+                    type: string
+        UserCreationResponse:
+            type: object
+            properties:
+                userId:
+                    type: integer
+                    nullable: true
+                emailAddress:
+                    type: string
+                status:
+                    type: string
+                    description: "Indicates if the user creation was Created or Failed."
+                message:
+                    type: string
+                    nullable: true
+                    description: "Error message if the creation failed."
+        HBOrganizationOnboardedRequest:
+            type: object
+            properties:
+                organizationId:
+                    type: integer
+                isOnboarded:
+                    type: boolean
+        HBOrganizationOnboardedResponse:
+            type: object
+            properties:
+                organizationId:
+                    type: integer
+                status:
+                    type: string
+                    description: "Indicates if organization onboarded was Success or Failed."
+                message:
+                    type: string
+                    nullable: true
+                    description: "Error message if the creation failed."

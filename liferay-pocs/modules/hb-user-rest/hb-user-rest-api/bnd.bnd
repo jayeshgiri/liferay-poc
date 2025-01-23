@@ -1,0 +1,6 @@
+Bundle-Name: hb-user-rest-api
+Bundle-SymbolicName: hb.user.rest.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	hb.user.rest.dto.v1_0,\
+	hb.user.rest.resource.v1_0

@@ -1,0 +1,9 @@
+apiDir: "../hb-user-management-api-api/src/main/java"
+apiPackagePath: "hb.user.management.api"
+application:
+    baseURI: "/hb-user-management-api"
+    className: "HbUserManagementApiApplication"
+    name: "HbUserManagementApi"
+author: "JayeshGoswami"
+clientDir: "../hb-user-management-api-client/src/main/java"
+testDir: "../hb-user-management-api-test/src/testIntegration/java"

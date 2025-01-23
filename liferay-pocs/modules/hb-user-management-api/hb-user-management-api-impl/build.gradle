@@ -1,0 +1,7 @@
+dependencies {
+	api project(":modules:hb-user-management-api:hb-user-management-api-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+}
+
+group = "hb.user.management.api"

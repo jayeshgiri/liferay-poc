@@ -1,0 +1,6 @@
+Bundle-Name: hb-user-management-api-api
+Bundle-SymbolicName: hb.user.management.api.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	hb.user.management.api.dto.v1_0,\
+	hb.user.management.api.resource.v1_0
